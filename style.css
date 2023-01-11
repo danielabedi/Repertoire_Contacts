@@ -1,0 +1,401 @@
+*{
+  margin: 0;
+ 
+  padding:0;
+}
+.principale{
+  position: relative;
+ background: #FFFFFF;
+ margin-top: auto;
+ justify-content: space-evenly;
+ 
+
+}
+.formulairedecontact{
+display: flex;
+flex-direction: column;
+color: #0880D6;
+
+}
+.mynav{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: #0880D6;
+  
+}
+.mynav p{
+
+  margin: 30px;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  line-height: 24px;
+  height: 30px;
+  font-weight: 700;
+ 
+}
+.mynav1{
+  background-color: #0880D6;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.mynav1 p{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  
+}
+.mynav2{
+  background-color: #0880D6;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.mynav2 p{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.parent{
+  width: 35%;
+  box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  color: white;
+  
+  
+  
+}
+.ListeDesContacts{
+  
+  width: 54%;
+  /* height: 110px; */
+  margin-right: 3%;
+  margin-bottom: auto;
+  /* box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
+  /* color: white; */
+  border-left: gray  solid 1px;
+  border-right:  gray  solid 1px;
+  border-bottom: gray solid 1px;
+  
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: -100%;
+  
+  
+}
+
+textarea ,label,input{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.images{
+ height: 200px;
+ width:  200px;
+ clip-path:ellipse(50% 50%);
+ 
+}
+
+
+.contact{
+  margin-left: 2px;
+  margin-right: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  border-bottom: gray solid 0.5px ;
+  height: 250px;
+  width: 100%;
+ 
+}
+.info{
+  height: 300px;
+  width: 700px;
+  padding-top: 25px;
+  gap: 0px;
+  margin-left: 40px;
+}
+h4{
+  padding-bottom: 0;
+}
+p{
+  padding-bottom: -100px;
+}
+  
+
+/*===========Bouton =========*/
+
+.bouton{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  gap: 5px;
+  
+}
+
+.bout1{
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #0880D6;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 131px;
+  height: 44px;
+ 
+}
+.bout1:hover {
+background-color: gray;
+opacity: 1;
+transform: translateY(0);
+transition-duration: .35s;
+}
+.bout2 {
+  
+  backface-visibility: hidden;
+  background-color: #FF3838;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 131px;
+  height: 44px;
+  margin-left: -50%;
+  
+  
+}
+.bout2:hover:hover {
+  background-color: gray;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+/* ======= fin bouton ========== */
+#email,#Prénom ,#Nom,#Telephone,#groupe{
+  height: 50px;
+  width: 96%;
+  margin: auto;
+  border:1px solid #C4C4C4
+
+}
+
+.group{
+margin-left: 10px;
+margin-right: 10px;
+height: 50px;
+
+}
+
+.Bio{
+  height: 120px;
+  width: 96%;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border:1px solid #C4C4C4
+}
+.joinpicture{
+  height: 150px;
+  border: dashed 2px gray;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 120px;
+  padding-right: 100px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+#avatar{
+  
+  visibility: hidden;
+}
+.avatar{
+  clip-path:ellipse(50% 50%); 
+  /*border-radius: 50%;*/
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.joinImage{
+  margin-left: 80px;
+} 
+
+.delete{
+  height: 50px;
+ border: none;
+ margin-top: 50px;
+ margin-left: 20px;
+ margin-right: 10px;
+ background-color:white;
+ 
+}
+.modify{
+  height: 50px;
+ border: none;
+ margin-top: 50px;
+ margin-left: 90px;
+ background-color:white;
+ 
+}
+
+.fa-regular {
+  color:#FF3838;
+}
+
+.fa-solid{
+  color: #555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================ MEDIA QUERIES =============================================================================*/
+
+
+
+@media screen and (min-width: 350px) and (max-width: 700px) {
+  /* styles pour les écrans d'une largeur comprise entre 345 et 600 pixels */
+  .principale {
+    /* styles pour l'élément .principale */
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .mynav, .mynav1, .mynav2 {
+    /* styles pour les éléments .mynav, .mynav1, .mynav2 */
+  }
+
+  .total {
+    /* styles pour l'élément .total */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parent {
+    /* styles pour l'élément .parent */
+    width: 94%;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-right: 3px;
+  }
+
+  .formulairedecontact {
+    /* styles pour l'élément .formulairedecontact */
+   
+  }
+
+  .Prénom, .Nom, .Telephone, .group, .Email, .Bio {
+    /* styles pour les éléments .Prénom, .Nom, .Telephone, .group, .Email, .Bio */
+  }
+
+  .joinpicture {
+    /* styles pour l'élément .joinpicture */
+  }
+
+  .bouton {
+    /* styles pour l'élément .bouton */
+    margin: 5px;
+  }
+
+  .bout1 {
+    /* styles pour les éléments .bout1 */
+   
+    margin-left: 5px;
+  }
+  .bout2{
+    /* styles pour l'élément .bout2 */
+    margin-left: -50px;
+  }
+
+  .ListeDesContacts {
+    /* styles pour l'élément .ListeDesContacts */
+    width: 94%;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-right: 3px;
+  }
+
+  .contact {
+    /* styles pour les contacts */
+
+   display: flex;
+   flex-direction: row;
+   height: 250px;
+   gap: 0;
+   
+
+  }
+  .avatar{
+    /* styles pour les images */
+
+   width: 120px;
+   height: 120px;
+   margin-top: 15px;
+   margin-left: 20px;
+
+  }
+  .info{
+    /* style pour les infos */
+    padding-top: 20px;
+    height: 220px;
+    font-size: 0.6em;
+  }
+  .delete{
+    margin-right: 30px;
+    margin-left: 5px;
+  }
+  .modify{
+    margin-right: 10px;
+  }
+  
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Liste des contacts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="principale">
+        <div class="mynav">  <p>Répertoire Des contacts</p> </div> 
+
+        <div class="total">
+            <div class="parent">
+                 <form action="/send-form">
+                      <div class="mynav1">  <p>Formulaire de contact</p> </div>
+
+                        <div class="formulairedecontact"><br>
+                                <input type="text" id="Id" name="id" value="new" hidden><br>
+                                <label class="Prénom" for="firstName">Prénom</label><br>
+                                <input type="text" id="Prénom" name="firstName" required><br>
+                                <label class="Nom" for="lastName">Nom</label><br>
+                                <input type="text" id="Nom" name="lastName" required><br>
+
+                                <label class="Telephone" for="phone">Telephone</label><br>
+                                <input type="number" id="Telephone" name="phone" required><br>
+                                <label class="groupe" for="group">Groupe</label><br>
+                               
+
+                                <select class="group" name="group" required>
+                                    <option value="select">Sélectionner</option>
+                                    <option value="Ami">Ami</option>
+                                    <option value="Collegue">Collegue</option>
+                                    <option value="Famille">Famille</option>
+                                </select><br>
+
+                                <label class="Email" for="email">Email</label><br>
+                                <input type="email" id="email" name="email" placeholder="your-email@site.com" required><br>
+                                <label for="bio">Bio</label><br>
+                                <textarea name="bio" id="bio" class="Bio" cols="30" rows="6"></textarea>
+                                <div class="joinpicture"><label for="avatar">Deposez la photo ici <input type="file" id="avatar" name="file" accept="image/*"></label></div>
+                                <br>
+                                <div class="bouton">
+                                      <button class="bout1" role="button">Créer</button>
+                                      <button class="bout2" role="button">Rénit</button> <br><br><br> <br>
+                                      
+                                 </div>
+
+                        </div>
+                  </form>
+            </div>
+
+
+                  <div class="ListeDesContacts">
+
+                    <div class="mynav2">  <p>Liste des contacts</p> </div> <br>
+
+                  </div>
+              
+                  
+         </div>
+
+
+
+
+    </div>
+
+    
+    
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/66c02ab4a9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
