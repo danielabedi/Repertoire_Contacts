@@ -21,34 +21,37 @@
                       <div class="mynav1">  <p>Formulaire de contact</p> </div>
 
                         <div class="formulairedecontact"><br>
+                                
                                 <input type="text" id="Id" name="id" value="new" hidden><br>
                                 <label class="Prénom" for="firstName">Prénom</label><br>
-                                <input type="text" id="Prénom" name="firstName" required><br>
+                                <input type="text" id="Prénom" name="firstName" required minlength="3" maxlength="49" size="49"  onblur="validPrenom()"><br>
+                                <p id="prenomErr"></p>
                                 <label class="Nom" for="lastName">Nom</label><br>
-                                <input type="text" id="Nom" name="lastName" required><br>
-
+                                <input type="text" id="Nom" name="lastName" required minlength="3" maxlength="49" size="49" onblur="validNom()" ><br>
+                                <p id="nomErr"></p>
                                 <label class="Telephone" for="phone">Telephone</label><br>
-                                <input type="number" id="Telephone" name="phone" required><br>
+                                <input type="text" id="Telephone" name="phone" required  onblur="validPhone()" ><br>
+                                <p id="phoneErr"></p>
                                 <label class="groupe" for="group">Groupe</label><br>
-                               
-
                                 <select class="group" name="group" required>
-                                    <option value="select">Sélectionner</option>
-                                    <option value="Ami">Ami</option>
-                                    <option value="Collegue">Collegue</option>
-                                    <option value="Famille">Famille</option>
+                                  <option value="select">Sélectionner</option>
+                                  <option value="Ami">Ami</option>
+                                  <option value="Collegue">Collegue</option>
+                                  <option value="Famille">Famille</option>
                                 </select><br>
 
                                 <label class="Email" for="email">Email</label><br>
-                                <input type="email" id="email" name="email" placeholder="your-email@site.com" required><br>
+                                <input type="email" id="email" name="email" placeholder="email@.com" required onblur="validEmail()" ><br>
+                                <p id="errorEmail"></p>
                                 <label for="bio">Bio</label><br>
-                                <textarea name="bio" id="bio" class="Bio" cols="30" rows="6"></textarea>
+                                <textarea name="bio" id="bio" class="Bio" cols="30" rows="6" required ></textarea>
                                 <div class="joinpicture"><label for="avatar">Deposez la photo ici <input type="file" id="avatar" name="file" accept="image/*"></label></div>
                                 <br>
                                 <div class="bouton">
-                                      <button class="bout1" role="button">Créer</button>
-                                      <button class="bout2" role="button">Rénit</button> <br><br><br> <br>
-                                      
+
+                                    <button class="bout1" role="button">Créer</button>
+                                    <button class="bout2" role="button">Rénit</button> <br><br><br> <br>
+
                                  </div>
 
                         </div>
@@ -57,18 +60,30 @@
 
 
                   <div class="ListeDesContacts">
-
                     <div class="mynav2">  <p>Liste des contacts</p> </div> <br>
-
                   </div>
-              
-                  
+                    
          </div>
 
-
-
-
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Voulez-vous vraiment supprimer ce contact?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="" id="button">Oui</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     
     
